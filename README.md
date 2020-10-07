@@ -2,8 +2,34 @@
 
 Projeto de exemplo de utilização do Serilog em conjunto com ElasticSearch e o Kibana, utilizando Docker.
 
+### Executar o Projeto:
+
+Pré requisitos: :.Net Core 3.1, Docker e VSCode
+
+1. Clone o repositório
+
+2. Na pasta do projeto execute:
+
+```
+dotnet restore
+```
+
+3. Ainda na pasta do projeto suba os containers:
+
+```
+docker-compose up -d
+```
+
+4. Acesse a aplicação para registrar um log de exemplo: http://localhost:8080
+
+5. Vá a url do kibana: http://localhost:5601 - será necessário definir um novo padrão de índice (Index Pattern) para exibir os dados: https://www.elastic.co/guide/en/kibana/current/tutorial-define-index.html 
+
+6 - Após isso basta acessar o discovery do Kibana e é possível ver os logs.
+
 
 ## Preparando o Projeto
+
+- (Em breve passo a passo da criação e configuração do projeto)
 
 ### Serilog - https://serilog.net/
 
